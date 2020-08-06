@@ -1,0 +1,168 @@
+
+// @media only screen and (max-width : 911px)
+
+// @media only screen and (max-width : 768px)
+@media screen and ( max-width: 992px ) 
+    .header
+        position: relative
+        background-color: transparent
+        &__img
+           background-color: black
+        &__logo
+            position: fixed
+            width: 60px
+            left: 0
+            top: 18px
+        &__title
+            display: none
+        &__nav
+            position: fixed
+            top: 0
+            right: -100%
+            width: 280px
+            height: 300px
+            padding: 20px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            z-index: 100
+            background-color: rgba(0, 0, 0, .8 )
+            color: white
+            transition: all 0.5s
+            &_active
+                z-index: 10
+                top: 0
+                right: 50%
+                transform: translate(50%, -1%)
+        &__item
+        margin: 10px 0
+
+    .burger 
+        display: block
+        position: fixed
+        top: 39px
+        right: 20px
+        transform: translateY(-50%)
+        width: 25px
+        height: 12px
+        span 
+            margin-bottom: 2px
+            display: block
+            height: 2px 
+            width: 100%
+            background-color: #000000
+            transition: all 0.5s
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg) 
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg) 
+
+    .promo
+        &__title
+            padding-top: 10px
+            font-family: 'Arctikascript', sans-serif
+            font-size: 80px
+            
+    .card
+        &__about
+            font-size: 17.5px
+    .card-2
+        margin-top: 64px
+
+    .sale
+        &__items
+            padding-top: 60px
+        &__title
+            padding-top: 22px
+            font-family: Akrobat
+            font-size: 30px
+            line-height: 34px
+            span 
+                font-size: 40px
+
+    .contacts
+        margin-bottom: 100px
+        &__form
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            margin-top: 10px
+            width: 430px
+            &:last-child
+                width: 430px
+                
+    
+@media only screen and (max-width : 768px)
+    .promo
+        text-align: center
+        position: relative
+        &__title
+            padding-top: 1px
+    .promo__left
+        width: 195px
+        position: absolute
+        left: 0
+        bottom: 39px
+    .promo__right
+        width: 195px
+        position: absolute
+        right: 0
+        bottom: 39px
+
+    .sale
+        &__items
+            padding-top: 30px
+        &__title
+            padding-top: 16px
+            font-family: Akrobat
+            font-size: 20px
+            line-height: 24px
+            span 
+                font-size: 30px
+
+@media only screen and (max-width : 576px)
+    .promo
+        
+        .promo__left
+            width: 145px
+            
+        .promo__right
+            width: 175px
+    .sale
+        .container
+            margin-top: 30px
+            width: 480px
+            height: 140px
+        &__arrow_left
+            width: 40px
+        &__arrow_right
+            width: 40px
+
+    .card
+        margin-left: 20px
+        margin-right: 20px
+
+@media only screen and (max-width : 450px)
+    .sale
+        .container
+            margin-top: 30px
+            width: 320px
+            height: 140px
+        &__items
+            padding-top: 20px
+        &__arrow_left
+            width: 25px
+        &__arrow_right
+            width: 25px
+        &__title
+            padding-top: 8px
+            font-family: Akrobat
+            font-size: 15px
+            line-height: 20px
+            span 
+                font-size: 22px

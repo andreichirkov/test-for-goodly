@@ -1,0 +1,268 @@
+@import 'media'
+@font-face
+    font-family: 'Akrobat'
+    src: url('../fonts/Akrobatsemibold.woff') format('woff')
+    font-weight: normal
+    font-style: normal //400
+
+@font-face
+    font-family: 'Arctikascript'
+    src: url('../fonts/Arctikascript.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Corbel'
+    src: url('../fonts/Corbel.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+
+html,
+body 
+    margin: 0
+    padding: 0
+    font-family: 'Akrobat', sans-serif
+    font-weight: 300
+    background: url('../img/bg-new.png') center repeat
+    
+
+img 
+    max-width: 100%
+    height: auto
+
+.burger 
+  display: none
+  z-index: 10000
+
+.header
+    height: 64px
+    background-color: #749c8d
+    padding: 11px 215px
+    
+    &__logo
+        width: 44px
+        height: 44px
+        margin-top: -4px
+        display: flex
+        align-items: center
+    &__img
+        // display: inline-block
+    &__title
+        // display: inline-block
+        font-size: 25.6px
+        line-height: 1.2
+        text-transform: uppercase
+        color: #ffffff
+        // margin-bottom: 20px
+        padding-left: 13px
+    &__social
+        img
+            width: 41px
+            margin-left: 12px
+
+
+
+.promo
+    margin-top: 13px
+    min-height: 250px
+    background: url('../img/bg-head.png') center center/cover no-repeat
+    padding-left: 0
+    &__title
+        padding-top: 20px
+        font-family: 'Arctikascript', sans-serif
+        font-size: 106.7px
+        line-height: 106px
+        font-weight: 400
+        color: #de2c2f
+
+    &__left
+        padding: 0
+    &__right
+        padding: 0
+
+.sale
+    text-align: center
+    .container
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        width: 980px
+        height: 220px
+        background: url('../img/bg-2.png') no-repeat
+        background-size: contain
+    &__items
+        padding-top: 60px
+    &__title
+        padding-top: 25px
+        font-family: Akrobat
+        font-size: 48px
+        line-height: 62px
+        text-transform: uppercase
+        color: #004734
+        span 
+            font-size: 62.5px
+            color: #de4814
+
+
+.items
+    .card
+        // width: 448px
+        box-shadow: 0px 0px 17px 0px rgba(16,16,17,0.3)
+        position: relative
+        &__up
+            height: 260px
+            display: flex
+            background-color: rgba(223, 228, 236, 0.7)
+            flex-basis: 150px
+        &__image
+            height: 218px
+            width: 186px
+            min-width: 146px
+            margin: 20px 14px
+            margin-left: 2px
+        &__descr
+            margin: 20px 14px
+            display: flex
+            flex-direction: column
+        &__price   
+            height: 80px
+            width: 220px
+            background-color: white
+            padding-left: 25px
+            &_old
+                text-decoration: line-through
+                padding-top: 3px
+                margin: 0
+                font-size: 25.8px
+                color: #575757
+            &_new
+                color: #e96c41
+                margin: 0
+                padding-top: 3px
+                font-size: 34.3px
+                color: #d8481c
+        &__order
+            margin-top: 14px
+            height: 42px
+            border-radius: 0
+            border: none
+            text-transform: uppercase
+            background-color: #3ab16f
+            color: white
+        &__more
+            margin-top: 14px
+            height: 42px
+            border: 2px solid #e96c41
+            border-radius: 0
+            color: #e96c41
+        &__important
+            margin-top: 14px
+            margin-left: auto
+            text-decoration: none
+            border-bottom: 1px dashed
+            color: #e96c41
+        &__down
+            margin: 0
+            // display: none
+            
+        &__text
+            height: 260px
+            background-color: rgba(223, 228, 236, 0.7)
+            padding: 20px
+        &__title
+            text-decoration: underline
+            font-size: 26px
+            margin: 0
+        &__subtitle
+            margin-top: 6px
+            margin-bottom: 18px
+            font-size: 26px
+        &__about
+            font-size: 19px
+            line-height: 1.2
+            font-weight: 400
+            color: #004734
+            margin: 0
+        &__footer
+            height: 84px
+            background-color: rgba(255, 255, 255, .9)
+            // padding: 20px
+            &_title
+                text-align: center
+                padding-top: 14px
+                margin: 0
+                font-size: 17.5px
+                color: #828384
+        &__socials
+            display: flex
+            justify-content: center
+            &_item
+                padding: 12px 6px 
+        
+        .img-wrap
+            position: absolute
+            top: 0
+            right: 0
+            width: 13%
+        &__second
+            margin-top: 64px
+
+.contacts
+    height: 240px
+    padding-top: 80px
+    &__wrap
+        padding: 22px
+        background-color: #80c9b0
+        border: 1px dashed #608f7f
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__item
+        height: 45px
+        width: 268px
+        &:last-child
+            width: 330px
+            background-color: #de0d08
+            border: none
+            color: white
+        
+.footer
+    padding-top: 70px
+    height: 224px
+    background-color: #a4a4a5
+    &__wrap
+        
+        text-align: center
+        width: 500px
+        margin: 0 auto
+    &__line
+        opacity: 0.7
+        font-size: 16.7px
+        line-height: 33px
+        color: #ffffff
+        a 
+            color: #ffffff
+
+//toggle
+.card__down-4-open, .card__down-3-open, .card__down-2-open, .card__down-1-open
+    position: relative
+    display: block
+    height: 344px
+    background-color: #fff
+    font-size: 20px
+    line-height: 1.1
+    color: #004734
+    padding: 25px
+    display: none
+.card
+    &__down-4, &__down-3, &__down-2, &__down-1
+        // display: none
+    &__close
+        position: absolute
+        top: 10px
+        right: 10px
+        cursor: pointer
+// .card__down-3-open
+//     &__down-3
